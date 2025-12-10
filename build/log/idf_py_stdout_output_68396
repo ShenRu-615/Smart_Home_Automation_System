@@ -1,0 +1,91 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\leesh\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\leesh\aes_project\SmartHomeSystem
+-- Found Git: C:/Users/leesh/.espressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1")
+-- Component directory C:/Users/leesh/aes_project/SmartHomeSystem/components/esp32-DHT11-master does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/leesh/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/leesh/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/leesh/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_ch34x_vcp
+NOTICE: Skipping optional dependency: espressif/usb_host_cp210x_vcp
+NOTICE: Skipping optional dependency: espressif/cjson
+NOTICE: Using component placed at C:\Users\leesh\PROJECT_AES\esp-rainmaker\components\esp_rainmaker for dependency "espressif/esp_rainmaker"(introduced by component "rmaker_app_insights")
+NOTICE: Using component placed at C:\Users\leesh\PROJECT_AES\esp-rainmaker\components\esp_rainmaker for dependency "espressif/esp_rainmaker", specified in C:\Users\leesh\aes_project\SmartHomeSystem\main\idf_component.yml
+NOTICE: Using component placed at C:\Users\leesh\PROJECT_AES\esp-rainmaker\examples\common\rmaker_app_network for dependency "espressif/rmaker_app_network", specified in C:\Users\leesh\aes_project\SmartHomeSystem\main\idf_component.yml
+NOTICE: Using component placed at C:\Users\leesh\PROJECT_AES\esp-rainmaker\components\esp_rainmaker for dependency "espressif/esp_rainmaker", specified in C:\Users\leesh\PROJECT_AES\esp-rainmaker\examples\common\rmaker_app_insights\idf_component.yml
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp_rcp_update": "1.5.3" -> "1.5.4"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 19 dependencies:
+NOTICE: [1/19] espressif/button (4.1.4)
+NOTICE: [2/19] espressif/cbor (0.6.1~4)
+NOTICE: [3/19] espressif/cmake_utilities (1.1.1)
+NOTICE: [4/19] espressif/esp-serial-flasher (1.10.0)
+NOTICE: [5/19] espressif/esp_daylight (1.0.1)
+NOTICE: [6/19] espressif/esp_diag_data_store (1.1.0)
+NOTICE: [7/19] espressif/esp_diagnostics (1.3.0)
+NOTICE: [8/19] espressif/esp_insights (1.3.1)
+NOTICE: [9/19] espressif/esp_rcp_update (1.5.3)
+NOTICE: [10/19] espressif/esp_schedule (1.3.2)
+NOTICE: [11/19] espressif/esp_secure_cert_mgr (2.7.2)
+NOTICE: [12/19] espressif/jsmn (1.1.0)
+NOTICE: [13/19] espressif/json_generator (1.1.2)
+NOTICE: [14/19] espressif/json_parser (1.0.3)
+NOTICE: [15/19] espressif/mdns (1.9.1)
+NOTICE: [16/19] espressif/network_provisioning (1.2.0)
+NOTICE: [17/19] espressif/qrcode (0.1.0~2)
+NOTICE: [18/19] espressif/rmaker_common (1.5.3)
+NOTICE: [19/19] idf (5.5.1)
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_ch34x_vcp
+NOTICE: Skipping optional dependency: espressif/usb_host_cp210x_vcp
+NOTICE: Skipping optional dependency: espressif/cjson
+-- Project sdkconfig file C:/Users/leesh/aes_project/SmartHomeSystem/sdkconfig
+Loading defaults file C:/Users/leesh/aes_project/SmartHomeSystem/sdkconfig.defaults...
+C:/Users/leesh/aes_project/SmartHomeSystem/sdkconfig.defaults:33 CONFIG_ESP_RMAKER_LOCAL_CTRL_ENABLE was replaced with CONFIG_ESP_RMAKER_LOCAL_CTRL_AUTO_ENABLE 
+warning: unknown kconfig symbol 'MBEDTLS_DYNAMIC_FREE_PEER_CERT' assigned to 'y' in C:/Users/leesh/aes_project/SmartHomeSystem/sdkconfig.defaults
+warning: unknown kconfig symbol 'BTDM_CTRL_MODE_BLE_ONLY' assigned to 'y' in C:/Users/leesh/aes_project/SmartHomeSystem/sdkconfig.defaults
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/riscv/ld/rom.api.ld
+-- Found Python3: C:/Users/leesh/.espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "SmartHomeSystem" version: 1.4
+-- Adding linker script C:/Users/leesh/aes_project/SmartHomeSystem/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/leesh/aes_project/SmartHomeSystem/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_cca.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_test.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libc.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script C:/Users/leesh/esp/v5.5.1/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- BUTTON: 4.1.4
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_rainmaker esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__button espressif__cbor espressif__cmake_utilities espressif__esp-serial-flasher espressif__esp_daylight espressif__esp_diag_data_store espressif__esp_diagnostics espressif__esp_insights espressif__esp_rcp_update espressif__esp_schedule espressif__esp_secure_cert_mgr espressif__jsmn espressif__json_generator espressif__json_parser espressif__mdns espressif__network_provisioning espressif__qrcode espressif__rmaker_common esptool_py fatfs freertos gpio_button hal heap http_parser idf_test ieee802154 json ledc_driver log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rmaker_app_insights rmaker_app_network rmaker_app_reset rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant ws2812_led
+-- Component paths: C:/Users/leesh/esp/v5.5.1/esp-idf/components/app_trace C:/Users/leesh/esp/v5.5.1/esp-idf/components/app_update C:/Users/leesh/esp/v5.5.1/esp-idf/components/bootloader C:/Users/leesh/esp/v5.5.1/esp-idf/components/bootloader_support C:/Users/leesh/esp/v5.5.1/esp-idf/components/bt C:/Users/leesh/esp/v5.5.1/esp-idf/components/cmock C:/Users/leesh/esp/v5.5.1/esp-idf/components/console C:/Users/leesh/esp/v5.5.1/esp-idf/components/cxx C:/Users/leesh/esp/v5.5.1/esp-idf/components/driver C:/Users/leesh/esp/v5.5.1/esp-idf/components/efuse C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp-tls C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_adc C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_app_format C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_bootloader_format C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_coex C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_common C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_cam C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_dac C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_gpio C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_gptimer C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_i2c C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_i2s C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_isp C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_jpeg C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_ledc C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_parlio C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_pcnt C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_ppa C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_rmt C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_sdio C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_sdm C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_sdspi C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_spi C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_touch_sens C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_tsens C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_twai C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_uart C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_eth C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_event C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_gdbstub C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_hid C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_http_client C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_http_server C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_https_ota C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_https_server C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_hw_support C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_lcd C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_local_ctrl C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_mm C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_netif C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_netif_stack C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_partition C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_phy C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_pm C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_psram C:/Users/leesh/PROJECT_AES/esp-rainmaker/components/esp_rainmaker C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_ringbuf C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_rom C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_security C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_system C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_timer C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_vfs_console C:/Users/leesh/esp/v5.5.1/esp-idf/components/esp_wifi C:/Users/leesh/esp/v5.5.1/esp-idf/components/espcoredump C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__button C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__cbor C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__cmake_utilities C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp-serial-flasher C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_daylight C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_diag_data_store C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_diagnostics C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_insights C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_rcp_update C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_schedule C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__esp_secure_cert_mgr C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__jsmn C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__json_generator C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__json_parser C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__mdns C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__network_provisioning C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__qrcode C:/Users/leesh/aes_project/SmartHomeSystem/managed_components/espressif__rmaker_common C:/Users/leesh/esp/v5.5.1/esp-idf/components/esptool_py C:/Users/leesh/esp/v5.5.1/esp-idf/components/fatfs C:/Users/leesh/esp/v5.5.1/esp-idf/components/freertos C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/gpio_button C:/Users/leesh/esp/v5.5.1/esp-idf/components/hal C:/Users/leesh/esp/v5.5.1/esp-idf/components/heap C:/Users/leesh/esp/v5.5.1/esp-idf/components/http_parser C:/Users/leesh/esp/v5.5.1/esp-idf/components/idf_test C:/Users/leesh/esp/v5.5.1/esp-idf/components/ieee802154 C:/Users/leesh/esp/v5.5.1/esp-idf/components/json C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/ledc_driver C:/Users/leesh/esp/v5.5.1/esp-idf/components/log C:/Users/leesh/esp/v5.5.1/esp-idf/components/lwip C:/Users/leesh/aes_project/SmartHomeSystem/main C:/Users/leesh/esp/v5.5.1/esp-idf/components/mbedtls C:/Users/leesh/esp/v5.5.1/esp-idf/components/mqtt C:/Users/leesh/esp/v5.5.1/esp-idf/components/newlib C:/Users/leesh/esp/v5.5.1/esp-idf/components/nvs_flash C:/Users/leesh/esp/v5.5.1/esp-idf/components/nvs_sec_provider C:/Users/leesh/esp/v5.5.1/esp-idf/components/openthread C:/Users/leesh/esp/v5.5.1/esp-idf/components/partition_table C:/Users/leesh/esp/v5.5.1/esp-idf/components/protobuf-c C:/Users/leesh/esp/v5.5.1/esp-idf/components/protocomm C:/Users/leesh/esp/v5.5.1/esp-idf/components/pthread C:/Users/leesh/esp/v5.5.1/esp-idf/components/riscv C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/rmaker_app_insights C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/rmaker_app_network C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/rmaker_app_reset C:/Users/leesh/esp/v5.5.1/esp-idf/components/rt C:/Users/leesh/esp/v5.5.1/esp-idf/components/sdmmc C:/Users/leesh/esp/v5.5.1/esp-idf/components/soc C:/Users/leesh/esp/v5.5.1/esp-idf/components/spi_flash C:/Users/leesh/esp/v5.5.1/esp-idf/components/spiffs C:/Users/leesh/esp/v5.5.1/esp-idf/components/tcp_transport C:/Users/leesh/esp/v5.5.1/esp-idf/components/ulp C:/Users/leesh/esp/v5.5.1/esp-idf/components/unity C:/Users/leesh/esp/v5.5.1/esp-idf/components/usb C:/Users/leesh/esp/v5.5.1/esp-idf/components/vfs C:/Users/leesh/esp/v5.5.1/esp-idf/components/wear_levelling C:/Users/leesh/esp/v5.5.1/esp-idf/components/wifi_provisioning C:/Users/leesh/esp/v5.5.1/esp-idf/components/wpa_supplicant C:/Users/leesh/PROJECT_AES/esp-rainmaker/examples/common/ws2812_led
+-- Configuring done (34.7s)
+-- Generating done (1.9s)
+-- Build files have been written to: C:/Users/leesh/aes_project/SmartHomeSystem/build

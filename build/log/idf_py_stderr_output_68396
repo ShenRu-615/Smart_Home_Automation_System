@@ -1,0 +1,9 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\leesh\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\leesh\aes_project\SmartHomeSystem
+CMake Warning (dev) at CMakeLists.txt:8:
+  Syntax Warning in cmake code at column 21
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ESP RainMaker Project commit: v1.7.9-6-gbf99e8d-dirty
+ESP Insights Project commit: 3d4e56d-dirty
